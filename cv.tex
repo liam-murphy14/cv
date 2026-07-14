@@ -1,0 +1,80 @@
+\documentclass[10pt]{article}
+
+% Core layout and margins using the geometry package
+\usepackage[letterpaper, margin=0.75in]{geometry}
+
+% Color accents using xcolor
+\usepackage{xcolor}
+\definecolor{primary}{HTML}{1A365D} % Deep Navy
+\definecolor{darkgray}{HTML}{2D3748} % Off-black
+
+% Font selection (fontspec is built into LuaLaTeX, no extra package needed)
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Pagella}
+
+% Interactive links using hyperref
+\usepackage[hidelinks]{hyperref}
+
+% Disable paragraph indentation globally
+\setlength{\parindent}{0pt}
+
+\begin{document}
+
+% --- HEADER ---
+\begin{center}
+    {\Huge \bfseries \color{primary} Your Name} \\ \vspace{4pt}
+    \small \color{darkgray}
+    \href{mailto:you@example.com}{you@example.com} \ $\cdot$ \ 
+    (555) 123-4567 \ $\cdot$ \ 
+    \href{https://linkedin.com}{://linkedin.com} \ $\cdot$ \ 
+    \href{https://github.com}{://github.com}
+\end{center}
+
+\vspace{12pt}
+
+% --- EXPERIENCE ---
+{\Large \bfseries \color{primary} Experience}
+\vspace{4pt}
+\hrule
+\vspace{6pt}
+
+{\bfseries Senior Software Engineer} \hfill Jan 2024 -- Present \\
+{\itshape Company Name} \hfill Remote
+\begin{itemize}
+    \item Developed and maintained core software infrastructure using modern design patterns.
+    \item Optimized pipeline configurations reducing resource usage and compilation overhead.
+\end{itemize}
+
+\vspace{8pt}
+
+{\bfseries Software Engineer} \hfill Jun 2022 -- Dec 2023 \\
+{\itshape Previous Company} \hfill New York, NY
+\begin{itemize}
+    \item Built scalable web services ensuring compatibility across multiple user environments.
+    \item Collaborated with cross-functional teams to deploy features ahead of schedule.
+\end{itemize}
+
+\vspace{12pt}
+
+% --- EDUCATION ---
+{\Large \bfseries \color{primary} Education}
+\vspace{4pt}
+\hrule
+\vspace{6pt}
+
+{\bfseries Bachelor of Science in Computer Science} \hfill Graduated May 2022 \\
+{\itshape University Name} \hfill City, ST
+
+\vspace{12pt}
+
+% --- SKILLS ---
+{\Large \bfseries \color{primary} Skills}
+\vspace{4pt}
+\hrule
+\vspace{6pt}
+
+{\bfseries Languages:} Python, Go, TypeScript, Nix, Bash \\
+{\bfseries Tools \& Tech:} Git, Docker, Linux, CI/CD, PostgreSQL
+
+\end{document}
+
