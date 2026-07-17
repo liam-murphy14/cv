@@ -30,6 +30,9 @@
             xcolor
             fontspec
             tex-gyre
+            enumitem
+            ulem
+            cmap
           ]
         );
     in
