@@ -4,6 +4,11 @@
 % Core layout and margins using the geometry package
 \usepackage[letterpaper, margin=0.5in]{geometry}
 
+% ATS highlighting help
+\usepackage{cmap}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
 % Color accents using xcolor
 \usepackage{xcolor}
 \definecolor{primary}{HTML}{1A365D} % Deep Navy
@@ -16,15 +21,18 @@
 % Interactive links using hyperref
 \usepackage[hidelinks]{hyperref}
 
+% control itemize spacing
 \usepackage{enumitem}
-\setlist[itemize]{nosep}
+\setlist[itemize]{nosep, itemsep=1pt, topsep=2pt}
 
+% control underline depth
 \usepackage{ulem}
 \setlength{\ULdepth}{3.5pt} 
 
 % Disable paragraph indentation globally
 \setlength{\parindent}{0pt}
 
+% COMMANDS
 \newcommand{\link}[2]{\href{#2}{\color{darkgray} \uline{#1}}}
 \newcommand{\heading}[1]{{\Large \bfseries \color{primary} #1}}
 
@@ -51,44 +59,40 @@
 \vspace{6pt}
 
 {\bfseries Amazon} \hfill Seattle, WA \\
-{\itshape Software Development Engineer II} \hfill October 2025 -- Present \\
-{\itshape Software Development Engineer I} \hfill December 2023 -- September 2025
-\vspace{2pt}
+{\itshape Software Development Engineer II} \hfill 10/2025 -- Present \\
+{\itshape Software Development Engineer I} \hfill 12/2023 -- 09/2025
 \begin{itemize}
-    \item Architect, implement, and launch containerized Java microservice to optimize payment routing decisions between banking partners, recovering \$2MM+ in bank partner fees annually by dynamically tuning routing weights
-    \item Increased payment success rate by 4 basis points and accelerated new banking partner launch timelines by 4 months by designing and integrating automatic payment reissuing solution on Amazon internal payments platform
-    \item Pioneered AI-based operations strategy to automate ticket investigation, payment workflow management, and banking partner communications, saving 240 SDE-days of effort per year
+    \item Architect and launch containerized Java microservice to optimize payment routing decisions, dynamically tuning routing weights to recover \$2MM+ in bank partner fees annually
+    \item Pioneer AI-based operations strategy to automate ticket investigation, payment workflow management, and banking partner communications, saving 240 SDE-days of effort per year
+    \item Coordinate development across 3 engineering organizations to integrate automatic payment reissuing solution, increasing payment success rate by 4 basis points and accelerating new banking partner launch timelines by 3 months
+    \item Spearhead migration of cross-border payment requests from legacy monolith to modern microservice gateway, reducing SDE effort to launch payments features by 16 weeks
+    \item Coach intern through design and code review process, empowering them to complete production-ready configuration management UI project
 \end{itemize}
 
 \vspace{6pt}
 
 {\bfseries PR Monkey} \hfill Boston, MA (Remote) \\
-{\itshape Full Stack Engineer} \hfill December 2021 -- November 2023
-\vspace{2pt}
+{\itshape Full Stack Engineer} \hfill 12/2021 -- 11/2023
 \begin{itemize}
-    \item Create a production-ready, TypeScript-based web application from the ground up for new SaaS business unit, managing multiple features’ production in collaboration with small team
-    \item Independently manage and develop brand’s official Chrome Extension, which includes email tracker, email templating, profile sharing tools and more, leading to 21\% increase in user engagement
-    \item Construct a customizable and efficient platform for users to build and share profiles across their network by implementing third-party media upload pipeline and UI components
+    \item Collaborated with 4-person cross-functional team to craft a production-ready, TypeScript-based web service for new SaaS business unit, owning third-party platform integration, user profile sharing, and user profile discovery features
+    \item Engineered brand’s official Chrome Extension, designing and implementing email tracking, email templating, and expanded profile sharing tools, leading to a 21\% increase in user engagement
 \end{itemize}
 
 \vspace{6pt}
 
 {\bfseries Fidelity Investments} \hfill Boston, MA \\
-{\itshape IT Audit Innovation Intern} \hfill June 2022 -- September 2022
+{\itshape IT Audit Innovation Intern} \hfill 06/2022 -- 09/2022
 \begin{itemize}
-\vspace{2pt}
-    \item Worked across Flask-based web development stack to create, maintain, and support 20 unique tools used by 100+ internal auditors for expediting audit process and ensuring report integrity
-    \item Implemented two machine learning models to cluster text documents and design intuitive front-end interface for a non-technical user base’s understanding
+    \item Incorporated 3 new tools into Flask-based web development used by 100+ internal auditors to expedite audit process and ensure report integrity
+    \item Implemented two machine learning models to cluster text documents, and designed an intuitive front-end interface for a non-technical audience
 \end{itemize}
 
 \vspace{6pt}
 
 {\bfseries Boston College Department of Computer Science} \hfill Chestnut Hill, MA \\
-{\itshape Head Teaching Assistant} \hfill August 2020 -- May 2023
+{\itshape Head Teaching Assistant} \hfill 08/2020 -- 05/2023
 \begin{itemize}
-\vspace{2pt}
-    \item Facilitated weekly seminar of 30 students to strengthen programming skills, improve student retention, and establish a theoretical underpinning for the study of computer science
-    \item Produced and integrated video lecture series into course curriculum to develop students’ command line scripting abilities to expand industry knowledge and competency for practical use
+    \item Facilitated weekly seminar and produced a video lecture series to develop students’ command line scripting abilities, improving student retention by deepening students' industry knowledge and professional competency
 \end{itemize}
 
 \vspace{12pt}
@@ -99,12 +103,10 @@
 \hrule
 \vspace{6pt}
 
-{\bfseries Boston College, Morrissey College of Arts and Sciences} \hfill Graduated May 2023 \\
+{\bfseries Boston College, Morrissey College of Arts and Sciences} \hfill Graduated 05/2023 \\
 {\itshape Bachelor of Science in Computer Science, Mathematics} \hfill GPA: 3.87/4.00
 \begin{itemize}
-\vspace{2pt}
     \item Honors: \textit{magna cum laude,} Phi Beta Kappa
-    \item Relevant Courses: Algorithms, Data Structures, Linear Algebra, Multivariable Calculus, Statistics
 \end{itemize}
 
 \vspace{12pt}
@@ -115,8 +117,8 @@
 \hrule
 \vspace{6pt}
 
-{\bfseries Languages:} Java, TypeScript, React, Python, Nix \\
-{\bfseries Tools \& Tech:} Amazon Web Services, Docker, PostgreSQL, Git, Linux
+{\bfseries Languages:} Java, TypeScript, Python, Nix \\
+{\bfseries Tools \& Tech:} Amazon Web Services, React, SvelteKit, Next.js, NestJS, Docker, PostgreSQL, Git
 
 \vspace{12pt}
 
@@ -126,19 +128,16 @@
 \vspace{6pt}
 
 {\bfseries Nix Package Maintainer} \ $\bullet$ \ \link{PR1}{https://github.com/NixOS/nixpkgs/pull/309387} \ $\bullet$ \ \link{PR2}{https://github.com/NixOS/nixpkgs/pull/326242}
-\vspace{2pt}
 \begin{itemize}
-    \item Added 2 packages to Nixpkgs global package management repository and complete ongoing maintenance.
+    \item Add and maintain 2 packages in Nixpkgs global package management repository
 \end{itemize}
 \vspace{6pt}
 {\bfseries Real Estate Data Aggregator} \ $\bullet$ \ \link{UI link}{https://housefire.liammurphydev.com} \ $\bullet$ \ \link{Code repository link}{https://github.com/liam-murphy14/python_serverless_housefire}
-\vspace{2pt}
 \begin{itemize}
-    \item Utilize SvelteKit and Python to display property-level data to provide access to novel, granular real estate trust data
+    \item Utilize SvelteKit and Python to display real estate trust holdings and provide access to novel property-level data
 \end{itemize}
 \vspace{6pt}
 {\bfseries Dynamic DNS Client} \ $\bullet$ \ \link{Code repository link}{https://github.com/liam-murphy14/rusty_ddns}
-\vspace{2pt}
 \begin{itemize}
     \item Implement Unix-based dynamic DNS update client with remote and local IP tracking capabilities in Rust
 \end{itemize}
