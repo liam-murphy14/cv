@@ -61,11 +61,14 @@
               export SOURCE_DATE_EPOCH=${toString self.lastModified}
               latexmk -interaction=nonstopmode -pdf -lualatex \
                 -pretex="\pdfvariable suppressoptionalinfo 512\relax" -usepretex cv.tex
+              latexmk -interaction=nonstopmode -pdf -lualatex \
+                -pretex="\pdfvariable suppressoptionalinfo 512\relax" -usepretex cover-letter.tex
               luaotfload-tool --cache=erase --flush-lookups --force
             '';
             installPhase = ''
               mkdir -p $out
               cp cv.pdf $out/Liam_Murphy_CV.pdf
+              cp cover-letter.pdf $out/Liam_Murphy_REPLACECOMPANYNAME_Cover_Letter.pdf
             '';
           };
         }

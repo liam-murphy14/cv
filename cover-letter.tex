@@ -1,0 +1,69 @@
+\documentclass[10pt]{article}
+\pagestyle{empty}
+
+% Core layout and margins using the geometry package
+\usepackage[letterpaper, margin=0.5in]{geometry}
+
+% ATS highlighting help
+\usepackage{cmap}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+% Color accents using xcolor
+\usepackage{xcolor}
+\definecolor{primary}{HTML}{1A365D} % Deep Navy
+\definecolor{darkgray}{HTML}{2D3748} % Off-black
+
+% Font selection (fontspec is built into LuaLaTeX, no extra package needed)
+\usepackage{fontspec}
+\setmainfont{TeX Gyre Pagella}
+
+% Interactive links using hyperref
+\usepackage[hidelinks]{hyperref}
+
+% control underline depth
+\usepackage{ulem}
+\setlength{\ULdepth}{3.5pt}
+
+% Disable paragraph indentation globally
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{10pt}
+
+% COMMANDS
+\newcommand{\link}[2]{\href{#2}{\color{darkgray} \uline{#1}}}
+\newcommand{\heading}[1]{{\Large \bfseries \color{primary} #1}}
+
+\begin{document}
+
+% --- HEADER ---
+\begin{center}
+    {\Huge \bfseries \color{primary} Liam Murphy} \\ \vspace{4pt}
+    \small
+    Seattle, WA \ $\bullet$ \
+    (708)-990-9822 \ $\bullet$ \
+    \link{liam.murphy137@gmail.com}{mailto:liam.murphy137@gmail.com} \ $\bullet$ \
+    \link{LinkedIn}{https://www.linkedin.com/in/liammurphy14/} \ $\bullet$ \
+    \link{GitHub}{https://github.com/liam-murphy14} \ $\bullet$ \
+    \link{Website}{https://liammurphydev.com}
+\end{center}
+
+\vspace{12pt}
+
+\heading{COVER LETTER}
+\vspace{4pt}
+\hrule
+\vspace{12pt}
+
+REPLACECURRENTDATEINFORMATLIKE July 20, 2026
+
+REPLACECOMPANYNAME Hiring Team
+
+Dear REPLACECOMPANYNAME Hiring Team,
+
+REPLACECONTENT
+
+Sincerely,
+
+Liam Murphy
+
+\end{document}
